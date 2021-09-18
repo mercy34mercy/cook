@@ -6,7 +6,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    a = get_tweet()
+    a = get_tweet(0)
+    while(a == 1):
+        a = get_tweet(0)
+
     return a
 
 

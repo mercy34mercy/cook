@@ -5,7 +5,7 @@ import urllib.error
 import urllib.request
 import random
 
-def get_tweet():
+def get_tweet(kaisu):
     #"goRrBpS261OBxxjXsSZhsBP1n"
     #"9S2PfhdZWNbgWxzlUZQj8QSBorCUu36YPmx4tn32KvoVmdj4oa"
 
@@ -16,6 +16,8 @@ def get_tweet():
 
     auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
     auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
+
+    re = ""
 
 
     api = tweepy.API(auth)
@@ -38,19 +40,15 @@ def get_tweet():
         for media in result.entities['media']:
             url = media['media_url_https']
             if url not in ret_url_list: ret_url_list.append(url)
+
     
-    if(len(ret_url_list) == 0):
-        get_tweet()
-    else:
-        print("sccsess")
+    if(len(ret_url_list) >= 1):
         return ret_url_list[random.randrange(len(ret_url_list))]
+    else:
+        return 1
+ 
+
 
 
 
     
-   
-
-
-
-
-get_tweet()
