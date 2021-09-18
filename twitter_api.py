@@ -36,11 +36,13 @@ class imageDownloader(object):
         """
         self.max_id = None # ページを跨ぐ検索対象IDの初期化
         for page in range(SEARCH_PAGES_NUMBER):
-            ret_url_list = self.search(TARGET, PER_PAGE_NUMBER)
-            for url in ret_url_list:
-                print('OK ' + url)
-                self.download(url)
-            time.sleep(0.1) # TimeOut防止
+            a =  url_list = self.search(TARGET, PER_PAGE_NUMBER)
+        
+        
+        
+        return a
+            
+ 
 
     def set_api(self):
         """apiの設定
@@ -53,7 +55,7 @@ class imageDownloader(object):
         """twitterで検索実行
         """
         # 検索結果
-        ret_url_list = []
+        ret_url_list = ["a"]
 
         try:
             # 検索実行
@@ -71,7 +73,8 @@ class imageDownloader(object):
             # 検索済みidの更新し、より古いツイートを検索させる
             self.max_id = result.id
             # 検索結果の返却
-            return ret_url_list
+            a = ret_url_list[1]
+            print(a)
         except Exception as e:
             self.error_catch(e)
 
@@ -97,7 +100,9 @@ def main():
     """
     try:
         downloader = imageDownloader()
-        downloader.run()
+        p = downloader.run()
+        print("OK")
+
     except KeyboardInterrupt:
         # Ctrl-Cで終了
         pass
