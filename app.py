@@ -7,14 +7,4 @@ app = Flask(__name__)
 def index():
     return 'hello, world'
 
-@app.route('/hello')
-def indexs():
-    return 'hello'
-@app.route('/hello')
-def indexs():
-    return 'hello'
 
-
-
-if __name__ == '__main__':
-    app.run()
