@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from flask import Flask
-from test import get_tweet
+from orehayaru import get_tweet
 
 app = Flask(__name__)
 
