@@ -32,7 +32,7 @@ def get_tweet(kaisu):
 
     #北海道　　東北　　関東　　中国 　　四国　　九州　関西　中部
 
-    tiho_lkist = ["#北海道 OR #北海道美人 OR #札幌 OR #札幌美人 OR #ミス北海道","#青森 OR #秋田 OR 秋田 OR #岩手 OR #山形 OR #宮城 OR #福島 OR #青森美人 OR #秋田美人 OR 秋田美人 OR #岩手美人 OR #山形美人 OR #宮城美人 OR #福島美人 OR #東北大","#東京 OR #埼玉 OR #茨城 OR #栃木 OR #群馬 OR #千葉 OR #神奈川","#岡山 OR #広島 OR #鳥取 OR #山口 OR #島根","#愛媛 OR #香川 OR #徳島 OR #高知","#福岡 OR #長崎 OR #熊本 OR #大分 OR #佐賀 OR #宮崎 OR #鹿児島 OR #沖縄","#京都 OR #滋賀 OR #大阪 OR #和歌山 OR #奈良 OR #兵庫","#静岡 OR #新潟 OR #岐阜 OR #愛知 OR #長野 OR #福井 OR #石川 OR #富山"]
+    tiho_lkist = ["#北海道 OR #北海道美人 OR #札幌 OR #札幌美人 OR #ミス北海道","#青森 OR #秋田 OR 秋田 OR #岩手 OR #山形 OR #宮城 OR #福島 OR #青森美人 OR #秋田美人 OR 秋田美人 OR #岩手美人 OR #山形美人 OR #宮城美人 OR #福島美人 OR #東北大","#東京 OR #埼玉 OR #茨城 OR #栃木 OR #群馬 OR #千葉 OR #神奈川","#静岡 OR #新潟 OR #岐阜 OR #愛知 OR #長野 OR #福井 OR #石川 OR #富山","#京都 OR #滋賀 OR #大阪 OR #和歌山 OR #奈良 OR #兵庫","#岡山 OR #広島 OR #鳥取 OR #山口 OR #島根","#愛媛 OR #香川 OR #徳島 OR #高知","#福岡 OR #長崎 OR #熊本 OR #大分 OR #佐賀 OR #宮崎 OR #鹿児島 OR #沖縄"]
 
     i = 0 
 
